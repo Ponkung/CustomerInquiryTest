@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CustomerInquiryTest.Controllers
+namespace CustomerInquiry.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -42,4 +42,5 @@ namespace CustomerInquiryTest.Controllers
         {
         }
     }
+
 }

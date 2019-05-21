@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "CustomerInquiryTest": {
+    "CustomerInquiry": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

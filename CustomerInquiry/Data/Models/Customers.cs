@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CustomerInquiryTest.Data.Models
+namespace CustomerInquiry.Data.Models
 {
     public class Customers
     {

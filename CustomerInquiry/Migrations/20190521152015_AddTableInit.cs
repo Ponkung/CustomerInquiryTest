@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace CustomerInquiryTest.Migrations
+namespace CustomerInquiry.Migrations
 {
     public partial class AddTableInit : Migration
     {
