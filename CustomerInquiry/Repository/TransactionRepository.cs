@@ -10,7 +10,7 @@ namespace CustomerInquiry.Repository
 {
     public class TransactionRepository : ITransactionRepository
     {
-        private DbSet<Transactions> TransactionsEntity;
+        private readonly DbSet<Transactions> TransactionsEntity;
 
         public TransactionRepository(ApplicationDbContext context)
         {

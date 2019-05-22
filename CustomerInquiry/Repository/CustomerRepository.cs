@@ -10,14 +10,10 @@ namespace CustomerInquiry.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private DbSet<Customers> customersEntity;
+        private readonly DbSet<Customers> customersEntity;
 
         public CustomerRepository(ApplicationDbContext context) {
             customersEntity = context.Set<Customers>();
-        }
-        public void DeleteCustomer(int id)
-        {
-            throw new NotImplementedException();
         }
 
         public Task<Customers> GetCustomerByCustEmail(string email)
@@ -39,11 +35,6 @@ namespace CustomerInquiry.Repository
         public void SaveCustomer(Customers Customer)
         {
             customersEntity.Add(Customer);
-        }
-
-        public void UpdateCustomer(Customers fanpage)
-        {
-            throw new NotImplementedException();
         }
     }
 }

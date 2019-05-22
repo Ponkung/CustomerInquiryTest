@@ -15,7 +15,7 @@ namespace CustomerInquiry.Controllers
     [ApiController]
     public class CustomerInquiryController : Controller
     {
-        private ICustomerService customerService;
+        private readonly ICustomerService customerService;
         private readonly IMapper mapper;
         public CustomerInquiryController(ICustomerService customerService, IMapper mapper) {
             this.customerService = customerService;
@@ -49,7 +49,7 @@ namespace CustomerInquiry.Controllers
                         customer = customerService.GetCustomerTransactionByCustomerEmail(value.email);
                     }
                     if (customer != null) {
-                        return Ok(new { results = mapper.Map<CustomersViewModel>(customer) });
+                        return Ok(mapper.Map<CustomersViewModel>(customer));
                     }
                     return Ok("Not found");
                 }

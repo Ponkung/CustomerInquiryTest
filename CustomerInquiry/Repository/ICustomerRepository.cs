@@ -12,7 +12,5 @@ namespace CustomerInquiry.Repository
         Task<Customers> GetCustomerByCustID(int id);
         Task<Customers> GetCustomerByCustEmail(string email);
         Task<Customers> GetCustomerByCustIdAndEmail(int id, string email);
-        void DeleteCustomer(int id);
-        void UpdateCustomer(Customers fanpage);
     }
 }
