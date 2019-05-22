@@ -24,7 +24,7 @@ namespace CustomerInquiry.Controllers
         // GET: /<controller>/
         public ActionResult<string> Index()
         {
-            return "Please use postman to test this api (use post method)";
+            return "Please use postman to test this api (use post method Ex. customerID : 124 : 124, 125, 123456)";
         }
 
         // POST api/values
